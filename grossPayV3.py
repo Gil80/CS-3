@@ -8,16 +8,16 @@ try:
 except:
     print('Error, please enter numeric input')
     exit()
-
 rate = input('Please enter rate per hour: ')
 try:
     float_rate = float(rate)
 except:
     print('Error, please enter numeric input')
     exit()
-
 if hours > str(40):
     grossPay = 1.5 * float_rate * float_hours
 else:
     grossPay = float_hours * float_rate
-print('The Gross Pay Amount is:', "$"+str(round(grossPay, 2)))  # converting to string to concatenate $ sign. Adding round(answer, 2) to show 2 decimals
+# converting to string to concatenate $ sign.
+# Adding round(answer, 2) to show 2 decimals.
+print('The Gross Pay Amount is:', "$"+str(round(grossPay, 2)))

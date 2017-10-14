@@ -4,7 +4,11 @@
 hours = float(input('Please enter amount of hours: '))
 rate = float(input('Please enter rate per hour: '))
 if hours > 40:
-    grossPay = 1.5 * rate * hours
+    extraTime = hours - 40.0
+    extraTimeRate = extraTime * 1.5 * rate
+    grossPay = 40.0 * rate + extraTimeRate
 else:
     grossPay = hours * rate
-print('The Gross Pay Amount is:', "$"+str(round(grossPay, 2)))  # converting to string to concatenate $ sign. Adding round(answer, 2) to show 2 decimals
+#  converting to string to concatenate $ sign.
+#  Adding round(answer, 2) to show 2 decimals
+print('The Gross Pay Amount is:', "$"+str(round(grossPay, 2)))

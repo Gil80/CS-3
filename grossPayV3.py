@@ -15,7 +15,9 @@ except:
     print('Error, please enter numeric input')
     exit()
 if hours > str(40):
-    grossPay = 1.5 * float_rate * float_hours
+    extraTime = float_hours - 40.0
+    extraTimeRate = extraTime * 1.5 * float_rate
+    grossPay = 40.0 * float_rate + extraTimeRate
 else:
     grossPay = float_hours * float_rate
 # converting to string to concatenate $ sign.

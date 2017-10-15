@@ -15,15 +15,16 @@ try:
 except:
     print('Bad Score')
     exit()
-if score >= 0.9 and score < 1.1:
+if score < 0 or score > 1:
+    print('Please enter values within range 0.0 and 1.0')
+    exit()
+elif score >= 0.9:
     print('A')
-elif score >= 0.8 and score < 0.9:
+elif score >= 0.8:
     print('B')
-elif score >= 0.7 and score < 0.8:
+elif score >= 0.7:
     print('C')
-elif score >= 0.6 and score < 0.7:
+elif score >= 0.6:
     print('D')
-elif score >= 0.0 and score < 0.6:
-    print('F')
 else:
-    print("Bad Score")
+    print('F')

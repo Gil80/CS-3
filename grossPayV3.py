@@ -23,5 +23,3 @@ else:
 # converting to string to concatenate $ sign.
 # Adding round(answer, 2) to show 2 decimals.
 print('The Gross Pay Amount is:', "$"+str(round(grossPay, 2)))
-
-# this is the end of the file
